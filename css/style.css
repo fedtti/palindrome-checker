@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@700&display=swap');
+
+:root {
+    --primary-background-color: white;
+          --primary-text-color: #404040;
+     --primary-link-text-color: #2980b9;
+  --secondary-background-color: #e7f2fa;
+      --secondary-border-color: #6ab0de;
+        --secondary-text-color: black;
+  --highlight-background-color: #edf0f2;
+      --highlight-border-color: #e1e4e5;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  font: normal 400 1rem/1 'Lato', system-ui;
+  justify-content: center;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto 4.8rem auto;
+  padding: 1.6rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Roboto Slab', system-ui;
+  font-optical-sizing: auto;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+/* CONTENTS */
+main {
+  padding: 1.6rem;
+}
+
+form {
+  background-color: var(--highlight-background-color);
+  border: 0.1rem solid var(--highlight-border-color);
+  padding: 1.6rem 4.8rem;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+label {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+input, button {
+  appearance: none;
+  font-family: inherit;
+  height: 3.2rem;
+  outline: none;
+}
+
+input {
+  border: 0.1rem solid var(--highlight-border-color);
+  margin: 1.6rem 0;
+  padding: 0 0.8rem;
+  width: 100%;
+}
+
+::placeholder {
+  color: var(--highlight-background-color);
+}
+
+button {
+  background-color: var(--primary-link-text-color);
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--primary-background-color);
+  cursor: pointer;
+  padding: 0 0.8rem;
+}
+
+aside {
+  background-color: var(--secondary-background-color);
+  border-top: 0.3rem solid var(--secondary-border-color);
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
+  padding: 1.6rem 4.8rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+#result {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 1.6rem 4.8rem;
+  min-height: 2.4rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+  margin: 6.4rem 1.6rem 0 1.6rem;
+  text-align: center;
+}
+
+small {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+a {
+  color: var(--primary-link-text-color);
+  text-decoration: none;
+}
