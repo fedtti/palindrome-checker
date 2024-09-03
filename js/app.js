@@ -17,7 +17,7 @@ const checkPalindrome = input => {
   }
 
   const regex = /[^A-Za-z0-9]/gi;
-  output = input.replace(regex, '').toLowerCase();
+  let output = input.replace(regex, '').toLowerCase();
   resultDivision.innerHTML = `<strong>${input}</strong> ${output === [...output].reverse().join('') ? 'is' : 'is not'} a palindrome`;
 };
 
